@@ -30,3 +30,4 @@ target 'rn_appcenter' do
       end
     end
   end
+end
