@@ -24,7 +24,7 @@ target 'rn_appcenter' do
   use_flipper!('Flipper' => '0.75.1', 'Flipper-Folly' => '2.5.3', 'Flipper-RSocket' => '1.3.1')
 
   post_install do |installer|
-    rinstaller.pods_project.targets.each do |target|
+    installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.1'
       end
